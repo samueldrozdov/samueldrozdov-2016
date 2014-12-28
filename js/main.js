@@ -10,7 +10,7 @@ $(function() {
       'line1': {
         'project' : 'Stitch',
         'description' : 'News Aggregator that allows you to highlight and save text while you read. Saved highlights can easily be shared with other users and act as links to highlighted articles.',
-        'technologies' : ["Core Data", "MWFeedParser", "AVNetworking"],
+        'technologies' : ["Core Data", "MWFeedParser", "AFNetworking"],
         'image' : 'imgs/projects/StitchDemo.png'
       },
       'line2': {
