@@ -18,7 +18,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: #fafafa;
+  background-color: white;
 }
 
 section {
@@ -92,7 +92,7 @@ a:active {
   height: 100px;
   border-radius: 50px;
 
-  border: 2px solid #fafafa;
+  border: 2px solid white;
 }
 
 /* Contact/Navbar */
@@ -101,22 +101,21 @@ a:active {
   height: 10%;
   vertical-align: middle;
 
-  background-color: #fafafa;
+  background-color: white;
   color: #212121;
   border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
 }
 
 .contact-name {
   padding-left: 20px;
   vertical-align: middle;
-
 }
 
 .contact-sources {
   padding-top: 12px;
   text-align: center;
 }
-
 
 .source-image {
   /*margin: 15px 0px; /*these should be vertically centered*/
@@ -156,7 +155,7 @@ a:active {
 }
 
 #name-btn {
-  background-color: #fafafa;
+  background-color: white;
   box-shadow: 0px 0px 0px 0px white inset;
   border: 0px;
   font-family: avenir;
@@ -168,123 +167,182 @@ a:active {
   color: #2c87c4;
 }
 
-
-
-/*
- .btn:active {
-   -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.125);
-   box-shadow: inset 0 0px 0px rgba(0,0,0,.125);
- }
-
-.btn.active {
-  border-radius: 0px;
-  border-bottom: 2px #2c87c4;
-  -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.125);
-  box-shadow: inset 0 0px 0px rgba(0,0,0,.125);
-  background-color: #fafafa;
-  border-bottom: 2px #2c87c4;
-
-  color: #2c87c4;
-}*/
-
-/* */
-
-.projects {
-  display: table;
-
-  width: 100%;
-  height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-@media(min-width:767px) {
-  .projects {
-    height: 90%;
-  }
-}
-
-.column {
-  display: table-cell;
-}
-
-#left {
-  background-color: #2c87c4;
-  color: white;
-  padding: 0px;
+.tabs {
   vertical-align: middle;
+  vertical-align: center;
 }
 
-.projects-image-column {
-  padding: 0px;
+.tab {
+  list-style-type: none;
   text-align: center;
+  padding: 5px;
 }
 
-.projects-image {
-  padding: 0px 30px;
-  height: 500px;
+.tab-label {
+  font-size: 16px;
+  color: black;
+}
+
+.tab:hover .tab-label {
+  color: #2c87c4;
+}
+
+.tabs .selected {
+  border-bottom: solid lightgray 2px;
+}
+
+/* Tab Content */
+
+.tabcontents {
+  height: 90%;
+}
+
+#tabs-1 {
+  background-color: #2c87c4;
+  height: 100%;
+}
+
+.project-table {
+  display: table;
+  height: 100%;
+}
+
+.project-column {
+  display: column;
+  text-align: center;
+  background-color: white;
+  padding: 10px 50px;
+  border: 5px solid #2c87c4;
+  margin: 10px 0px;
+  height: 100%;
+  border-radius: 6px;
+}
+
+#project-list {
+  list-style-type: none;
+}
+
+.project-directions {
+  color: lightgray;
+  padding-bottom: 20px;
+}
+
+.project {
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 5px 0px;
+}
+
+.project-list-wrapper {
+  margin: 20px 0px;
+}
+
+.project-image {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.project-slogan {
+  color: gray;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid lightgray;
 }
 
 .project-description {
-  max-width: 350px;
-  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid lightgray;
 }
 
-.project-description-item {
-  border-top: 1px solid #fafafa;
-
-  vertical-align: bottom;
-  padding-bottom: 5px;
-  margin-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 30px;
+#tabs-2 {
+  background-color: lightgreen;
+  height: 100%;
 }
 
-.project-technologies {
-  font-size: 20px;
-  padding-bottom: 5px;
+.education-table {
+  display: table;
+  height: 100%;
 }
 
-.project-description-header {
-  border: 0px;
-  padding-top: 5px;
-  font-size: 24px;
+.education-column {
+  display: column;
+  text-align: center;
+  background-color: white;
+  padding: 10px 50px;
+  border: 5px solid lightgreen;
+  margin: 10px 0px;
+  height: 100%;
+  border-radius: 6px;
 }
 
-#right {
-  /* This is a hack way to make a seperator */
-  box-shadow: 2px 2px 5px 0px lightgray inset;
+.education-image {
+  height: 250px;
 }
 
-.projects-header {
-  margin: 20px;
-  margin-top: 30px;
+.education-title {
+
 }
 
-#line1, #line2, #line3,
-#line4, #line5, #line6 {
-  vertical-align: middle;
-  padding: 20px 0px;
+#makeschool {
+  color: #188EBD;
+}
+#maryland {
+  color: #D10010;
 }
 
-/*
-#line1:hover, #line2:hover, #line3:hover,
-#line4:hover, #line5:hover, #line6:hover {
-  background-color: #2c87c4;
-  color: white;
-}*/
+.education-slogan {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+}
 
+#tabs-3 {
+  background-color: orange;
+  height: 100%;
+}
 
+.family-table {
+  display: table;
+  height: 100%;
+}
 
-/*To Finish
-*
-* 1) Center everything in the navigation bar.
-* 2) Make slide show match with the project links
-* 3) Do Navigation, scroll animation
-*
-*
-*
-*
-*/
+.family-column {
+  display: column;
+  text-align: center;
+  background-color: white;
+  padding: 10px 50px;
+  border: 5px solid orange;
+  margin: 10px 0px;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.family-image {
+  width: 200px;
+  border: 2px solid lightgray;
+  border-radius: 100px;
+  margin-top: 20px;
+}
+
+.family-name {
+  color: black;
+}
+
+.family-title {
+  color: gray;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.family-more {
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.family-more:hover {
+  color: #2c87c4;
+}
