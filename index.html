@@ -20,7 +20,10 @@
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.js"></script>
   <!-- Plugin JavaScript -->
-  <script src="js/jquery.easing.min.js"></script>
+  <!-- <script src="js/jquery.easing.min.js"></script> -->
+  <script src="js/tabcontent.js" type="text/javascript"></script>
+
+
 
   <!-- JS -->
   <script type="text/javascript" src="js/main.js"></script>
@@ -48,126 +51,140 @@
     </div>
     <!--
     <div class="landing-footer">
-      <div class="glyphicon glyphicon-chevron-down"></div>
-    </div>
-  -->
+    <div class="glyphicon glyphicon-chevron-down"></div>
   </div>
+-->
+</div>
 
-  <!--Contact-->
-  <div class="container-fluid contact">
-    <div class="row">
+<!--Contact-->
+<div class="container-fluid contact">
+  <div class="row">
 
-      <div class="col-md-5 contact-name">
-        <button type="btn" id="name-btn">
-          <h3 class="contact-name">Samuel Drozdov</h3>
-        </button>
-      </div>
+    <div class="col-md-4 col-xs-12 contact-name">
+      <button type="btn" id="name-btn">
+        <h3 class="contact-name">Samuel Drozdov</h3>
+      </button>
+    </div>
 
-      <div class="col-md-2 contact-sources">
-        <a href="http://www.linkedin.com/pub/samuel-drozdov/56/5a2/536">
-          <img class="source-image" src="imgs/linkedin.png" alt="linkedin">
-        </a>
-        <a href="http://www.github.com/sdrozzy">
-          <img class="source-image" src="imgs/github.png" alt="github">
-        </a>
-        <a href="http://twitter.com/simplyDroz">
-          <img class="source-image" src="imgs/twitter.png" alt="twitter">
-        </a>
-      </div>
+    <div class="col-md-4 col-xs-12 contact-sources">
+      <a href="http://www.linkedin.com/pub/samuel-drozdov/56/5a2/536">
+        <img class="source-image" src="imgs/linkedin.png" alt="linkedin">
+      </a>
+      <a href="http://www.github.com/sdrozzy">
+        <img class="source-image" src="imgs/github.png" alt="github">
+      </a>
+      <a href="http://twitter.com/simplyDroz">
+        <img class="source-image" src="imgs/twitter.png" alt="twitter">
+      </a>
+    </div>
 
-      <div class="col-md-5 navbar">
-          <label class="navbar-item navbar">
-            <button type="button" class="btn" id="projects-btn"><h4>Projects</h4>
-          </label>
-          <!--
-          <label class="btn navbar-item">
-            <input type="radio" name="options" id="option2"> Education
-          </label>
-          <label class="btn navbar-item">
-            <input type="radio" name="options" id="option3"> More
-          </label>
-        -->
-        </div>
-      </div>
-
+    <div class="col-md-4">
+      <nav>
+        <ul class="tabs">
+          <li class="tab col-md-4">
+            <a href="#tabs-1">
+              <span class="tab-label">Projects</span>
+            </a>
+          </li>
+          <li class="tab col-md-4">
+            <a href="#tabs-2">
+              <span class="tab-label">Education</span>
+            </a>
+          </li>
+          <li class="tab col-md-4">
+            <a href="#tabs-3">
+              <span class="tab-label">Family</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
+</div>
 
-  <!--Projects-->
-  <div class="projects">
-      <!-- Changing Project Images -->
-      <div id="left" class="column">
-        <div class="col-md-6 projects-image-column">
-          <img class="projects-image" src="imgs/projects/StitchDemo.png" alt="stitch filler">
+  <div class="tabcontents">
+    <div id="tabs-1" class="tab-content">
+      <div class="project-table col-md-12">
+        <div class="col-md-1"></div>
+        <div class="project-column col-md-3" id="project-list">
+          <div class="project-list-wrapper">
+            <li class="project-directions">Select A Project</li>
+            <li class="project" id="project1">Stitch</l1>
+            <li class="project" id="project2">Depo</l1>
+            <li class="project" id="project3">iKnow</l1>
+            <li class="project" id="project4">Happy Place</l1>
+            <li class="project" id="project5">Stay Green</l1>
+            <li class="project" id="project6">Tilt And Shoot</l1>
+          </div>
         </div>
-        <div class="col-md-6 project-description">
-          <div class="row">
-            <div class="project-description-item project-description-header">
-              Stitch
+        <div class="project-column col-md-7" id="project-description">
+          <div class="col-md-6">
+            <div class="project-image-wrapper">
+              <img class="project-image" src="" alt="Image">
             </div>
           </div>
-          <div class="row">
-            <div class="project-description-item project-desciption-paragraph">Stitch
-              is a social news reading app that allows you save snippets of text while
-              you read. These snippets are automatically organized and can be accessed
-              at a later time.
+          <div class="col-md-6">
+            <h2 class="project-name">Name</h2>
+            <h4 class="project-slogan">Slogan</h4>
+            <p class="project-description">Description</p>
+            <div class="project-technologies-wrapper">
+              <li>Technology 1</li>
+              <li>Technology 2</li>
+              <li>Technology 3</li>
+              <li>Technology 4</li>
             </div>
           </div>
-          <div class="row">
-            <div class="project-description-item">
-              <div class="project-technologies"> Technologies Used </div>
-              <div class="project-technologies-list">
-                <li>Core Data</li>
-                <li>AVNetworking</li>
-                <li>MWFeedParser</li>
-              </div>
-            </div>
-          </div>
-          <!--
-          <div class="row">
-            <div class="project-description-item">Github, App Store</div>
-          </div>
-          -->
         </div>
+        <div class="col-md-1"></div>
       </div>
-      <!-- Project Links -->
-      <div id="right" class="column">
-        <div class="container-fluid">
-          <div class="row">
-            <h3 class="projects-header">Projects</h3>
-          </div>
-          <div id="line1" class="row project-item">
-            <div class="col-md-4 item">Stitch</div>
-            <div class="col-md-7">Social News Reading</div>
-            <div class="col-md-1 glyphicon glyphicon-chevron-right"></div>
-          </div>
-          <div id="line2" class="row project-item">
-            <div class="col-md-4">Depo</div>
-            <div class="col-md-7">Paypal to Bitcoin Transaction Manager</div>
-            <div class="col-md-1 glyphicon glyphicon-chevron-right"></div>
-          </div>
-          <div id="line3" class="row project-item">
-            <div class="col-md-4">iKnow</div>
-            <div class="col-md-7">Simple Information Knowledge Bank</div>
-            <div class="col-md-1 glyphicon glyphicon-chevron-right"></div>
-          </div>
-          <div id="line4" class="row project-item">
-            <div class="col-md-4">Happy Place</div>
-            <div class="col-md-7">A Place for All Your Happy Photos</div>
-            <div class="col-md-1 glyphicon glyphicon-chevron-right"></div>
-          </div>
-          <div  id="line5" class="row project-item">
-            <div class="col-md-4">Stay Green</div>
-            <div class="col-md-7">A Simple to Play, Hard to Master Game</div>
-            <div class="col-md-1 glyphicon glyphicon-chevron-right"></div>
-          </div>
-          <div id="line6" class="row project-item">
-            <div class="col-md-4">Tilt And Shoot</div>
-            <div class="col-md-7">An Accelerometer Game</div>
-            <div class="col-md-1 glyphicon glyphicon-chevron-right"></div>
-          </div>
+    </div>
+    <div id="tabs-2" class="tab-content container-fluid">
+      <div class="education-table col-md-12">
+        <div class="col-md-1"></div>
+        <div class="education-column col-md-5">
+          <img class="education-image" src="imgs/MakeSchoolLogo.jpg" alt="MakeSchool Logo"/>
+          <h2 class="education-title" id="makeschool">MakeSchool</h2>
+          <h4 class="education-slogan">"Changing the CS Degree"</h4>
+          <li>Selected out of 150 to be one of the founding 11 students</li>
         </div>
+        <div class="education-column col-md-5">
+          <img class="education-image" src="imgs/umdTurtleShell.jpg" alt="UMD Logo"/>
+          <h2 class="education-title" id="maryland">University Of Maryland</h2>
+          <h4 class="education-slogan">"Fear The Turtle"</h4>
+          <li>Majoring in computer science</li>
+          <li>Proud brother of the Alpha Epsilon Pi fraternity</li>
+
+        </div>
+        <div class="col-md-1"></div>
       </div>
+    </div>
+    <div id="tabs-3" class="tab-content">
+      <div class="family-table col-md-12">
+        <div class="family-column col-md-3">
+          <img class="family-image" src="imgs/parents.png" alt="parents image"/>
+          <h2 class="family-name">Parents</h2>
+          <h4 class="family-title">Business Owners</h4>
+          <h5 class="family-more" onclick="location.href='http://www.cesCenter.com';">Learn More <div class="glyphicon glyphicon-arrow-right"/></h5>
+        </div>
+        <div class="family-column col-md-3">
+          <img class="family-image" src="imgs/andrew.png" alt="andrew image"/>
+          <h2 class="family-name">Andrew</h2>
+          <h4 class="family-title">Software Engineer</h4>
+          <h5 class="family-more" onclick="location.href='http://www.mrdrozdov.com';">Learn More <div class="glyphicon glyphicon-arrow-right"/></h5>
+        </div>
+        <div class="family-column col-md-3">
+          <img class="family-image" src="imgs/gabriel.png" alt="gabriel image"/>
+          <h2 class="family-name">Gabriel</h2>
+          <h4 class="family-title">Artist</h4>
+          <h5 class="family-more" onclick="location.href='http://www.gabrieldrozdov.com';">Learn More <div class="glyphicon glyphicon-arrow-right"/></h5>
+        </div>
+        <div class="family-column col-md-3">
+          <img class="family-image" src="imgs/dexter.png" alt="dexter image"/>
+          <h2 class="family-name">Dexter</h2>
+          <h4 class="family-title">Dog</h4>
+          <h5 class="family-more" onclick="location.href='http://www.google.com/search?q=labradoodle';">Learn More <div class="glyphicon glyphicon-arrow-right"/></h5>
+        </div>
+    </div>
   </div>
 
 </body>
