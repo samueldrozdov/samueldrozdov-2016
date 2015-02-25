@@ -320,9 +320,11 @@ a:active {
 
 .family-image {
   width: 200px;
+  height: 200px;
   border: 2px solid lightgray;
   border-radius: 100px;
   margin-top: 20px;
+  align: middle;
 }
 
 .family-name {
